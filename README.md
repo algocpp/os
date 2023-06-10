@@ -1,2 +1,3 @@
-# os
-Algocpp.OS
+# Algocpp.OS
+
+OS-dependent libraries in Algocpp
