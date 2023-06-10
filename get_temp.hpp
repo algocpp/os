@@ -17,8 +17,8 @@ namespace algocpp
 {
 	namespace os
 	{
-#if defined(_WIN32) || defined(_WIN63)
-		inline std::string GetTempPath()
+#if defined(_WIN32) || defined(_WIN64)
+		inline std::string get_temp()
 		{
 			char szPath[1024];
 			DWORD dwBuffSize;
@@ -30,7 +30,7 @@ namespace algocpp
 			return std::string{szPath};
 		}
 #else
-		inline std::string GetTempPath()
+		inline std::string get_temp()
 		{
 			return "/tmp";
 		}
