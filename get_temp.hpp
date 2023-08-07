@@ -21,9 +21,7 @@ namespace algocpp
 		inline std::string get_temp()
 		{
 			char szPath[1024];
-			DWORD dwBuffSize;
-
-			dwBuffSize = GetTempPath(
+			GetTempPath(
 				sizeof(szPath) / sizeof(szPath[0]),
 				szPath);
 
